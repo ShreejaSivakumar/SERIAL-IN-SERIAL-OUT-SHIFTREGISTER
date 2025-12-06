@@ -1,5 +1,5 @@
 # SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
-
+**DATE : 06/12/2025**
 **AIM:**
 
 To implement  SISO Shift Register using verilog and validating their functionality using their functional tables
@@ -29,14 +29,138 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **PROGRAM**
 
+Shift register(SISO)
+----------------------------------------------------
+module shift_register_3bit (
+    input  wire clk,     // clock input
+    input  wire rst,     // synchronous reset
+    input  wire serial_in, // serial data input
+    output reg  [2:0] q   // 3-bit register output
+);
+
+always @(posedge clk) begin
+    if (rst)
+        q <= 3'b000;          // reset all bits
+    else
+        q <= {q[1:0], serial_in}; // shift left
+end
+
+endmodule
+
+
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:
+Developed by: SHREEJA R S
+RegisterNumber: 25017561
 
 */
 
 **RTL LOGIC FOR SISO Shift Register**
 
+<img width="945" height="414" alt="Screenshot 2025-12-06 110542" src="https://github.com/user-attachments/assets/3b66808c-b94b-468d-a86e-c598d7199317" />
+
+
 **TIMING DIGRAMS FOR SISO Shift Register**
 
+<img width="1284" height="171" alt="Screenshot 2025-12-06 110614" src="https://github.com/user-attachments/assets/8ad99940-9196-4a40-af4f-244629b6b7c4" />
+
+
+
 **RESULTS**
+    Thus,SISO Shift Register using verilog and validating their functionality using their functional tables has successful execution of the program. 
+
+    .
+
+
+    .
+    .
+    .
+    .
+    .
+
+    .
+
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+ .
+
+
+    .
+    .
+    .
+    .
+    .
+
+    .
+
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                
+.
+.
+.
+.
+.
+..
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
